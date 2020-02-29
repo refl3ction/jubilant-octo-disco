@@ -1,11 +1,11 @@
 # Jubilant Octo Disco
-Helper tool to schedule API calls based on a config file
+Helper tool to schedule API calls based on a config file or environment variables
 
 ## Getting Started
 
 ### Features
 
-- Execute requests to URL within the given interval
+- Execute requests to URLs within the given interval
 
 ### Requirements
 - node v12.14.1
@@ -25,7 +25,7 @@ docker build -t jubilant-octo-disco .
 ```sh
 export URL=http://google.com
 export INTERVAL=3000
-node src/app.sh
+node src/app.js
 
 # OR
 docker run --name jod -e URL='http://google.com' -e INTERVAL=3000 dpolicastro/jubilant-octo-disco:latest
